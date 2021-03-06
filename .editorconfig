@@ -14,17 +14,17 @@ trim_trailing_whitespace = false
 [*.{yml,yaml}]
 indent_size = 2
 
-[.tsx]
+[*.tsx]
 indent_size = 2
 
-[.ts]
+[*.ts]
 indent_size = 2
 
-[.js]
+[*.js]
 indent_size = 2
 
-[.jsx]
+[*.jsx]
 indent_size = 2
 
-[.blade.php]
+[*.blade.php]
 indent_size = 2
