@@ -1,0 +1,6 @@
+*
+!.eslintrc.js
+!resources
+!resources/app
+!resources/app/*
+!resources/app/**/*.tsx

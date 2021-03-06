@@ -19,9 +19,6 @@ module.exports = {
     'react',
     '@typescript-eslint'
   ],
-  ignorePatterns: [
-    '([\\s\\S]*?)(resources/app/**/*.tsx)'
-  ],
   rules: {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
@@ -31,7 +28,8 @@ module.exports = {
         closingSlash: 'never',
         beforeSelfClosing: 'never'
       }
-    ]
+    ],
+    semi: ['error', 'always']
   },
   settings: {
     react: {
@@ -39,4 +37,4 @@ module.exports = {
       version: 'detect'
     }
   }
-}
+};
