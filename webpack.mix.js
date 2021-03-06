@@ -12,4 +12,5 @@ const mix = require('laravel-mix');
  */
 
 mix.ts('resources/app/index.tsx', 'public/js/app.js')
-    .sourceMaps(true, 'source-map');
+    .sourceMaps(true, 'source-map')
+    .disableSuccessNotifications();
