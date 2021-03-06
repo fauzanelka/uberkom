@@ -1,6 +1,6 @@
 # uberkom
 
-uberkom is computer assisted system powered by [laravel](https://laravel.com).
+uberkom is a computer assisted test system powered by [laravel](https://laravel.com).
 
 ## Project Status
 
