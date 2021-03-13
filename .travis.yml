@@ -1,0 +1,22 @@
+dist: focal
+
+jobs:
+  include:
+    - language: node_js
+      node_js:
+        - 'lts/*'
+      install:
+        - npm ci
+      script:
+        - npm run production
+    - language: php
+      php:
+        - '7.4'
+      cache:
+        directories:
+          - vendor
+      install:
+        - composer install --no-interaction --no-progress
+      script:
+        - vendor/bin/phpcs
+        - vendor/bin/phpunit
