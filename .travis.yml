@@ -17,6 +17,9 @@ jobs:
           - vendor
       install:
         - composer install --no-interaction --no-progress
+      before_script:
+        - cp .env.example .env
+        - php artisan key:generate
       script:
         - vendor/bin/phpcs
         - vendor/bin/phpunit
